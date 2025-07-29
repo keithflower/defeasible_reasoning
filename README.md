@@ -1,6 +1,6 @@
 # DePYsible ClojureScript Translation
 
-This directory contains a file-by-file translation of the DePYsible Python implementation to ClojureScript.
+This directory contains a file-by-file translation of [Stefano Bragaglia's DePYsible Python implementation](https://github.com/stefano-bragaglia/DePYsible) to ClojureScript.
 
 ## Original Python Structure
 
@@ -40,7 +40,7 @@ Python                    -> ClojureScript (test/depysible/)
 1. **Parser**: Replaced Python's `arpeggio` with ClojureScript's `instaparse`
 2. **Data Structures**: Python classes -> ClojureScript records and maps
 3. **Object Methods**: Converted to pure functions operating on data
-4. **Comments**: Each ClojureScript file heavily references the original Python implementation
+4. **Comments**: Each ClojureScript file references the original Python implementation
 
 ## Development
 
@@ -68,4 +68,4 @@ node out/main.js
 
 ## Architecture
 
-The ClojureScript implementation maintains the same overall structure as the original Python code. All comments reference the corresponding Python lines and functions for easy cross-reference. 
+The ClojureScript implementation maintains the same overall structure as the original Python code. All comments reference the corresponding Python lines and functions for cross-reference. 
