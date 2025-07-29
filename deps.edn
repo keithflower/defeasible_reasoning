@@ -1,0 +1,10 @@
+{:paths ["src" "test"]
+ 
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        org.clojure/clojurescript {:mvn/version "1.11.60"}
+        instaparse/instaparse {:mvn/version "1.4.12"}
+        clojure.java-time/clojure.java-time {:mvn/version "1.4.2"}}
+        
+ :aliases
+ {:dev {:extra-deps {thheller/shadow-cljs {:mvn/version "2.25.8"}}}
+  :test {:extra-deps {lambdaisland/kaocha {:mvn/version "1.87.1366"}}}}} 
